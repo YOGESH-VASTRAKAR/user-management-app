@@ -1,12 +1,69 @@
-# React + Vite
+# 👥 User Management System (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly User Management System built with **React.js**. It allows you to:
 
-Currently, two official plugins are available:
+- ✅ Create new users
+- 🔐 Login with email and password
+- 🔁 Reset user passwords
+- ✏️ Edit user details
+- 🔍 Search users by email
+- 📃 View all registered users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔧 Create, Read, Update, Delete (CRUD) operations on user data
+- 🔐 Password reset functionality
+- 🧠 Client-side form validations
+- 💾 Uses **localStorage** for user data persistence
+- 🔍 Live user search by email
+- 🌐 Navigation using **React Router DOM**
+- 📱 Fully responsive and styled using custom CSS
+
+---
+
+## 📁 Project Structure
+
+src/
+├── components/
+│ ├── CreateUser.jsx
+│ ├── Login.jsx
+│ ├── ResetPassword.jsx
+│ ├── UserList.jsx
+│ ├── EditUser.jsx
+│ └── UserSearch.jsx
+├── component-styles/
+│ ├── CreateUser..css
+│ ├── Login.css
+│ ├── ResetPassword.css
+│ ├── UserList.css
+│ ├── EditUser.css
+│ └── UserSearch.css
+├── utilities/
+│ └── storage.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+
+
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js (Hooks: `useState`, `useEffect`)
+- React Router DOM
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- LocalStorage API
+
+---
+
+## 📦 Installation & Run Locally
+
+```bash
+git clone https://github.com/your-username/user-management-app.git
+cd user-management-app
+npm install
+npm start
