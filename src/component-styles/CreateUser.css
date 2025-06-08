@@ -1,0 +1,97 @@
+/* Container Styling */
+.create-user-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading */
+.create-user-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Input Fields */
+.create-user-container input {
+  padding: 10px 14px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.create-user-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button */
+.create-user-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #114985;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.create-user-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Message */
+.create-user-container p {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.create-user-container p:has(> .error) {
+  color: #c62828;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .create-user-container {
+    margin: 20px 16px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .create-user-container h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .create-user-container input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .create-user-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
